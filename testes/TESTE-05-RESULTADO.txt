@@ -1,0 +1,13 @@
+Nome: Pedro Sanzio e Joao Pedro
+Convertido de: TESTE-05.txt
+Resultado: 
+
+beq $t1, $s2, 200
+add $s1, $s3, $s3
+NOP
+NOP
+sw $s1, 1240($zero)
+lw $t0, 1200($t1)
+NOP
+NOP
+sw $t0, 1500($t1)
