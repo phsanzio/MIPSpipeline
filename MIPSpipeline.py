@@ -406,7 +406,7 @@ def text_generator(read_file, write_file):
 
 
 #Mude a quantidade de arquivos
-n_arquivos = 5
+n_arquivos = 10
 #Coloque o caminho exato do arquivo, ex: pc/documentos/testes/
 caminho_arquivo = "testes/"
 for i in range(0, n_arquivos):
