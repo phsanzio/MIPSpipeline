@@ -19,8 +19,8 @@ O MIPSpipeline é um programa para implementar algoritimos de resolução de con
 - <strong>Passo 1:</strong> Crie um arquivo com esse padrão de nome (TESTE-01.txt) podendo ir de 01 até o número de arquivos definidos em n_arquivos
 - <strong>Passo 2:</strong> Insira as instruções MIPS uma por linha nos arquivos, exemplo:
   
-lw $t0, 1200($t1)
-add $t0, $s2, $t0
+lw $t0, 1200($t1)\n
+add $t0, $s2, $t0\n
 sw $t0, 1200($t1)
 
 - <strong>Passo 3:</strong> Altere no arquivo .py o caminho do arquivo que vai ser lido em caminho_arquivo
