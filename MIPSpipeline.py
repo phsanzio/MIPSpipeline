@@ -162,7 +162,7 @@ def remove_NOPs(array_list):
 #Priorizar funções Jump e Branch
 def priorizeJandB(array_list):
     i = 0
-    jump_instructions = ['J', 'jalr', 'jr', 'jal']
+    jump_instructions = ['j', 'jalr', 'jr', 'jal']
     branch_instructions = ['bltz', 'bgez', 'bltzal', 'bgezal', 'beq', 'bne', 'blez', 'bgtz']
     while i < len(array_list):
         array_line1 = array_list[i]
@@ -373,9 +373,10 @@ def text_generator(read_file, write_file):
         for line in read_file:
             array_temp = []
             line = line.strip().replace(',', '').replace('(',' ').replace(')',' ')
-            for element in line.split():
-                array_temp.append(element)
-            array_list.append(array_temp)
+            if line != '':
+                for element in line.split():
+                    array_temp.append(element)
+                array_list.append(array_temp)
         
         #Seleção dos metódos
         verify_name = str(read_file.name).replace('TESTE-', '').replace('.txt', '').replace(caminho_arquivo, '')
@@ -408,7 +409,7 @@ def text_generator(read_file, write_file):
 #Mude a quantidade de arquivos
 n_arquivos = 10
 #Coloque o caminho exato do arquivo, ex: pc/documentos/testes/
-caminho_arquivo = "testes/"
+caminho_arquivo = "caminho"
 for i in range(0, n_arquivos):
     username = 'Pedro Sanzio e Joao Pedro'
     if i + 1 < 10:
